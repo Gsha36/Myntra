@@ -1,0 +1,42 @@
+/* src/components/Filters.css */
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Increased gap for better spacing */
+  width: 250px; /* Adjusted width for more space */
+  padding: 20px; /* Increased padding */
+  background-color: #f4f4f4; /* Slightly adjusted background color */
+  border: 1px solid #ddd; /* Added border */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.filters div {
+  display: flex;
+  flex-direction: column; /* Stack label and input/select */
+  gap: 5px; /* Gap between label and input/select */
+}
+
+.filters label {
+  font-size: 14px; /* Font size for labels */
+  font-weight: 500; /* Font weight for labels */
+  color: #333; /* Text color */
+}
+
+.filters input[type="number"],
+.filters select {
+  width: 100%; /* Full width for inputs and select */
+  padding: 8px; /* Padding inside inputs/select */
+  font-size: 14px; /* Font size for inputs/select */
+  border: 1px solid #ccc; /* Border for inputs/select */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #fff; /* Background color */
+  color: #333; /* Text color */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.filters input[type="number"]:focus,
+.filters select:focus {
+  border-color: #007bff; /* Border color on focus */
+  outline: none; /* Remove default outline */
+}
